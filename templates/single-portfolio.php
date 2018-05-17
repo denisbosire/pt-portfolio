@@ -82,7 +82,7 @@ get_header(); ?>
             <?php if ( ! empty( $gallery_images ) ) : ?>
             
             <?php foreach ( $gallery_images as  $attachment_id => $img_full_url ) : ?>
-            <li><?php echo wp_get_attachment_link( $attachment_id, 'portfolio-single' ); ?></li>
+            <li><?php echo wp_get_attachment_image( $attachment_id, 'portfolio-single' ); ?></li>
             <?php endforeach; ?>
             </ul>
             <?php endif; ?> 
