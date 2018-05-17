@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ #customize-theme-controls .upsellsection,
+ #accordion-section-thumbs-portfolio_style_view_pro,
+ #accordion-section-xi-portfolio_style_view_pro.
+ #accordion-section-draft-portfolio_style_view_pro {
+    border: none;
+    display: none !important;
+}

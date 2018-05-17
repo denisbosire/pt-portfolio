@@ -1,0 +1,213 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+#main {
+  position: relative;
+}
+.masonry {
+	width: 100%;
+}
+ul#filters {
+	margin: 0;
+	padding: 2em 0;
+	list-style: none;
+
+}
+ul#filters li {
+	display: inline-block;
+	padding: 1em;
+}
+ul#filters li a {
+	text-transform: capitalize;
+	color: #000;
+  padding-bottom: 0.5em;
+}
+ul#filters li a.active {
+  border-bottom: 2px solid #000;
+}
+ul#filters li:first-child {
+	padding-left: 0;
+}
+.single-portfolio .hentry {
+	padding: 0 2em;
+}
+.single-portfolio .hentry h1 {
+	margin-top: 0;
+	line-height: 1;
+}
+ ul.portfolio-meta,
+ .portfolio-gallery-list {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ }
+
+ ul.portfolio-meta li {
+ 	font-weight: bold;
+ }
+ ul.portfolio-meta h5 {
+ 	color: #999;
+ 	margin-bottom: 0;
+ }
+ .single-post-thumb img {
+ 	width: 100%;
+ }
+
+ .welcome {
+ 	padding: 2em 0;
+ }
+  .welcome h1 {
+  	font-size: 55px;
+  	color: #000;
+  	line-height:1.1;
+  	text-transform: capitalize;
+  }
+
+
+#portfolio-list {
+  position: relative;
+}
+.portfolio-item {
+  line-height: 0;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+.portfolio-item .overbox {
+  position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    padding: 0 1em;
+    
+}
+.portfolio-item .overbox h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.portfolio-item .overbox h2 a {
+  color: #2ecc71;
+}
+
+.portfolio-item .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+.post-thumb {
+  overflow: hidden;
+}
+.post-thumb img{
+ -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  width: 100%;
+}
+.portfolio-item:hover .post-thumb img {
+  opacity: 0.2;
+-webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.portfolio-item .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.portfolio-item:hover .title,
+.portfolio-item:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+.portfolio-item .tagline a {
+  color: #000;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.portfolio-item .tagline  {
+  font-size: 0.8em;
+  opacity: 0;
+  color: #bb9d56;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.portfolio-item:hover .tagline,
+.portfolio-item:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height;
+     -moz-transition-property: height;
+      -ms-transition-property: height;
+       -o-transition-property: height;
+          transition-property: height;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.padded {
+  padding: 2em 10em;
+  text-align:center;
+}
+@media only screen and (max-width: 480px) {
+  .padded {
+    padding: 0;
+  }
+}

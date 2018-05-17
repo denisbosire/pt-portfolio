@@ -1,0 +1,9 @@
+3/23/2017 - fixed TGM for CMB2
+3/24/2017 - Fixed mobile footer, moved intro text to general section
+11/05/2017 - fixed masonry memory leak
+11/05/2017 - added video
+11/05/2017 -  added portfolio template v2
+
+2018
+12/03/2018 - Added gallery Template with image modal on click
+14/03/2018 - Added gallery with popup to single template
